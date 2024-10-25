@@ -1,0 +1,18 @@
+{
+  "ColumnValidations": [
+    {
+      "NumColum":  1,
+      "ColumnName": "Nro de la Solicitud",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 2,
+      "ColumnName": "Edad",
+      "Type": "numero",
+      "MaxLength": null,
+      "IsRequired": false
+    }
+  ]
+}

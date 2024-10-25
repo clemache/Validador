@@ -4,7 +4,13 @@
     <_LastSelectedProfileId>C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="Form1.cs">
+    <Compile Update="ConfiguracionValidaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditarValidacionColumna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Main.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

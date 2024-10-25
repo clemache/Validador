@@ -31,13 +31,14 @@
             label1 = new Label();
             label2 = new Label();
             btnCargarArchivo = new Button();
+            configValidaciones = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(169, 38);
+            label1.Location = new Point(314, 9);
             label1.Name = "label1";
             label1.Size = new Size(146, 32);
             label1.TabIndex = 0;
@@ -47,7 +48,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(22, 112);
+            label2.Location = new Point(24, 51);
             label2.Name = "label2";
             label2.Size = new Size(184, 25);
             label2.TabIndex = 1;
@@ -56,7 +57,7 @@
             // btnCargarArchivo
             // 
             btnCargarArchivo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCargarArchivo.Location = new Point(237, 112);
+            btnCargarArchivo.Location = new Point(265, 49);
             btnCargarArchivo.Name = "btnCargarArchivo";
             btnCargarArchivo.Size = new Size(223, 30);
             btnCargarArchivo.TabIndex = 3;
@@ -64,11 +65,21 @@
             btnCargarArchivo.UseVisualStyleBackColor = true;
             btnCargarArchivo.Click += btnCargarArchivo_Click;
             // 
+            // configValidaciones
+            // 
+            configValidaciones.Location = new Point(516, 49);
+            configValidaciones.Name = "configValidaciones";
+            configValidaciones.Size = new Size(211, 30);
+            configValidaciones.TabIndex = 4;
+            configValidaciones.Text = "Configuración - Validaciones";
+            configValidaciones.UseVisualStyleBackColor = true;
+            // 
             // Validador
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(516, 200);
+            ClientSize = new Size(817, 421);
+            Controls.Add(configValidaciones);
             Controls.Add(btnCargarArchivo);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -85,5 +96,6 @@
         private Label label1;
         private Label label2;
         private Button btnCargarArchivo;
+        private Button configValidaciones;
     }
 }
