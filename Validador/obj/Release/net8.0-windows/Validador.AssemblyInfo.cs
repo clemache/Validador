@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Validador")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45b7218e9ce3c562b53dafbc6d11bac89c85f40d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Validador")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Validador")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -28,33 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            comboBox1 = new ComboBox();
-            numericUpDown1 = new NumericUpDown();
-            comboBox2 = new ComboBox();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            txtNombreColumna = new TextBox();
+            btnGuardar = new Button();
+            btnCancelar = new Button();
+            cmbTipoDato = new ComboBox();
+            longitudCampo = new NumericUpDown();
+            checkObligatorio = new CheckBox();
+            ((System.ComponentModel.ISupportInitialize)longitudCampo).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(90, 33);
-            label1.Name = "label1";
-            label1.Size = new Size(126, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Editar Validacion para :";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(35, 63);
+            label2.Location = new Point(36, 29);
             label2.Name = "label2";
             label2.Size = new Size(106, 15);
             label2.TabIndex = 1;
@@ -63,7 +53,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(35, 97);
+            label3.Location = new Point(36, 63);
             label3.Name = "label3";
             label3.Size = new Size(76, 15);
             label3.TabIndex = 2;
@@ -72,7 +62,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(35, 130);
+            label4.Location = new Point(36, 96);
             label4.Name = "label4";
             label4.Size = new Size(61, 15);
             label4.TabIndex = 3;
@@ -81,95 +71,100 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(35, 161);
+            label5.Location = new Point(36, 127);
             label5.Name = "label5";
             label5.Size = new Size(70, 15);
             label5.TabIndex = 4;
             label5.Text = "Obligatorio:";
             // 
-            // textBox1
+            // txtNombreColumna
             // 
-            textBox1.Location = new Point(147, 60);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(235, 23);
-            textBox1.TabIndex = 5;
+            txtNombreColumna.Location = new Point(148, 26);
+            txtNombreColumna.Name = "txtNombreColumna";
+            txtNombreColumna.Size = new Size(235, 23);
+            txtNombreColumna.TabIndex = 5;
             // 
-            // button1
+            // btnGuardar
             // 
-            button1.Location = new Point(103, 237);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 6;
-            button1.Text = "Guardar";
-            button1.UseVisualStyleBackColor = true;
+            btnGuardar.Location = new Point(74, 175);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(113, 23);
+            btnGuardar.TabIndex = 6;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
-            // button2
+            // btnCancelar
             // 
-            button2.Location = new Point(210, 237);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 7;
-            button2.Text = "Cancelar";
-            button2.UseVisualStyleBackColor = true;
+            btnCancelar.Location = new Point(239, 175);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(113, 23);
+            btnCancelar.TabIndex = 7;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
-            // comboBox1
+            // cmbTipoDato
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(147, 94);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(235, 23);
-            comboBox1.TabIndex = 8;
+            cmbTipoDato.FormattingEnabled = true;
+            cmbTipoDato.Items.AddRange(new object[] { "string", "int", "double", "date" });
+            cmbTipoDato.Location = new Point(148, 60);
+            cmbTipoDato.Name = "cmbTipoDato";
+            cmbTipoDato.Size = new Size(235, 23);
+            cmbTipoDato.TabIndex = 8;
             // 
-            // numericUpDown1
+            // longitudCampo
             // 
-            numericUpDown1.Location = new Point(147, 128);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(235, 23);
-            numericUpDown1.TabIndex = 9;
+            longitudCampo.Location = new Point(148, 94);
+            longitudCampo.Name = "longitudCampo";
+            longitudCampo.Size = new Size(235, 23);
+            longitudCampo.TabIndex = 9;
             // 
-            // comboBox2
+            // checkObligatorio
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(147, 158);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 10;
+            checkObligatorio.AutoSize = true;
+            checkObligatorio.Location = new Point(148, 128);
+            checkObligatorio.Name = "checkObligatorio";
+            checkObligatorio.Size = new Size(15, 14);
+            checkObligatorio.TabIndex = 10;
+            checkObligatorio.UseVisualStyleBackColor = true;
             // 
             // ConfiguracionValidaciones
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(404, 292);
-            Controls.Add(comboBox2);
-            Controls.Add(numericUpDown1);
-            Controls.Add(comboBox1);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            ClientSize = new Size(428, 218);
+            Controls.Add(checkObligatorio);
+            Controls.Add(longitudCampo);
+            Controls.Add(cmbTipoDato);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnGuardar);
+            Controls.Add(txtNombreColumna);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "ConfiguracionValidaciones";
-            Text = "ConfiguracionValidaciones";
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Editar Validación";
+            ((System.ComponentModel.ISupportInitialize)longitudCampo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox textBox1;
-        private Button button1;
-        private Button button2;
-        private ComboBox comboBox1;
-        private NumericUpDown numericUpDown1;
-        private ComboBox comboBox2;
+        private TextBox txtNombreColumna;
+        private Button btnGuardar;
+        private Button btnCancelar;
+        private ComboBox cmbTipoDato;
+        private NumericUpDown longitudCampo;
+        private CheckBox checkBox1;
+        private CheckBox checkObligatorio;
     }
 }

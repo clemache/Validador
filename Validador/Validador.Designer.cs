@@ -32,15 +32,19 @@
             label2 = new Label();
             btnCargarArchivo = new Button();
             configValidaciones = new Button();
+            groupBox1 = new GroupBox();
+            listBoxLogsValidaciones = new ListBox();
+            btnDescargarErroresTxt = new Button();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(314, 9);
+            label1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(403, 9);
             label1.Name = "label1";
-            label1.Size = new Size(146, 32);
+            label1.Size = new Size(128, 30);
             label1.TabIndex = 0;
             label1.Text = "VALIDADOR";
             // 
@@ -48,7 +52,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(24, 51);
+            label2.Location = new Point(31, 47);
             label2.Name = "label2";
             label2.Size = new Size(184, 25);
             label2.TabIndex = 1;
@@ -57,7 +61,7 @@
             // btnCargarArchivo
             // 
             btnCargarArchivo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCargarArchivo.Location = new Point(265, 49);
+            btnCargarArchivo.Location = new Point(235, 45);
             btnCargarArchivo.Name = "btnCargarArchivo";
             btnCargarArchivo.Size = new Size(223, 30);
             btnCargarArchivo.TabIndex = 3;
@@ -67,26 +71,64 @@
             // 
             // configValidaciones
             // 
-            configValidaciones.Location = new Point(516, 49);
+            configValidaciones.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            configValidaciones.Location = new Point(698, 45);
             configValidaciones.Name = "configValidaciones";
             configValidaciones.Size = new Size(211, 30);
             configValidaciones.TabIndex = 4;
             configValidaciones.Text = "Configuración - Validaciones";
             configValidaciones.UseVisualStyleBackColor = true;
+            configValidaciones.Click += configValidaciones_Click;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(listBoxLogsValidaciones);
+            groupBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox1.Location = new Point(31, 81);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(878, 530);
+            groupBox1.TabIndex = 5;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Logs";
+            // 
+            // listBoxLogsValidaciones
+            // 
+            listBoxLogsValidaciones.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBoxLogsValidaciones.FormattingEnabled = true;
+            listBoxLogsValidaciones.ItemHeight = 17;
+            listBoxLogsValidaciones.Location = new Point(17, 31);
+            listBoxLogsValidaciones.Name = "listBoxLogsValidaciones";
+            listBoxLogsValidaciones.Size = new Size(842, 480);
+            listBoxLogsValidaciones.TabIndex = 0;
+            // 
+            // btnDescargarErroresTxt
+            // 
+            btnDescargarErroresTxt.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnDescargarErroresTxt.Location = new Point(48, 617);
+            btnDescargarErroresTxt.Name = "btnDescargarErroresTxt";
+            btnDescargarErroresTxt.Size = new Size(179, 30);
+            btnDescargarErroresTxt.TabIndex = 6;
+            btnDescargarErroresTxt.Text = "Descargar Logs (.txt)";
+            btnDescargarErroresTxt.UseVisualStyleBackColor = true;
+            btnDescargarErroresTxt.Click += button1_Click;
             // 
             // Validador
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(817, 421);
+            ClientSize = new Size(945, 659);
+            Controls.Add(btnDescargarErroresTxt);
+            Controls.Add(groupBox1);
             Controls.Add(configValidaciones);
             Controls.Add(btnCargarArchivo);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "Validador";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Validador";
+            groupBox1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -97,5 +139,8 @@
         private Label label2;
         private Button btnCargarArchivo;
         private Button configValidaciones;
+        private GroupBox groupBox1;
+        private ListBox listBoxLogsValidaciones;
+        private Button btnDescargarErroresTxt;
     }
 }

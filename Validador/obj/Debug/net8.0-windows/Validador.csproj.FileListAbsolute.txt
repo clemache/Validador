@@ -41,3 +41,8 @@ C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\bin\Debug\net
 C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\bin\Debug\net8.0-windows\ICSharpCode.SharpZipLib.dll
 C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\bin\Debug\net8.0-windows\SixLabors.Fonts.dll
 C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\bin\Debug\net8.0-windows\SixLabors.ImageSharp.dll
+C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\obj\Debug\net8.0-windows\Validador.ConfiguracionValidaciones.resources
+C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\obj\Debug\net8.0-windows\Validador.sourcelink.json
+C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\obj\Debug\net8.0-windows\Validador.Validaciones.resources
+C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\bin\Debug\net8.0-windows\Configuracion\ConfigValidations.json

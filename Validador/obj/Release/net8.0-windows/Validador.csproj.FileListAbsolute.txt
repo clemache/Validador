@@ -41,3 +41,8 @@ C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\obj\Release\n
 C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\obj\Release\net8.0-windows\Validador.pdb
 C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\obj\Release\net8.0-windows\Validador.genruntimeconfig.cache
 C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\obj\Release\net8.0-windows\ref\Validador.dll
+C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\bin\Release\net8.0-windows\Configuracion\ConfigValidations.json
+C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\bin\Release\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\obj\Release\net8.0-windows\Validador.ConfiguracionValidaciones.resources
+C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\obj\Release\net8.0-windows\Validador.Validaciones.resources
+C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\obj\Release\net8.0-windows\Validador.sourcelink.json

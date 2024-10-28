@@ -1,0 +1,283 @@
+[
+    {
+      "NumColum": 1,
+      "ColumnName": "Nro de la Solicitud",
+      "Type": "string",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 2,
+      "ColumnName": "Descripción Tipo de Solicitud",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": false
+    },
+    {
+      "NumColum": 3,
+      "ColumnName": "Observación de Solicitud",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 4,
+      "ColumnName": "No Orden",
+      "Type": "int",
+      "MaxLength": 45,
+      "IsRequired": false
+    },
+    {
+      "NumColum": 5,
+      "ColumnName": "Descripción de Tipo de Orden",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 6,
+      "ColumnName": "Estado Orden",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 7,
+      "ColumnName": "Comentario",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 8,
+      "ColumnName": "Comentario Creación Ot",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 9,
+      "ColumnName": "Número Actividad Orden",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 10,
+      "ColumnName": "Descripción de Actividad",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 11,
+      "ColumnName": "Nombre de Cliente",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 12,
+      "ColumnName": "Teléfono Cliente",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 13,
+      "ColumnName": "Diámetro guia",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 14,
+      "ColumnName": "Número de medidor",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 15,
+      "ColumnName": "Número Contrato",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 16,
+      "ColumnName": "Número de Servicio",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 17,
+      "ColumnName": "Número de Producto",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 18,
+      "ColumnName": "Descripción de Categoria",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 19,
+      "ColumnName": "Estado corte",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 20,
+      "ColumnName": "Sector Operativo",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 21,
+      "ColumnName": "Descripción de Unidad de Trabajo",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 22,
+      "ColumnName": "Fecha Generación de Orden",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 23,
+      "ColumnName": "Fecha asignación de Orden",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 24,
+      "ColumnName": "Fecha de Legalización de Orden",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 25,
+      "ColumnName": "Fecha estimada de Ejecución de Orden",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 26,
+      "ColumnName": "Descripción de Causal de Orden",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 27,
+      "ColumnName": "Dirección de OT",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 28,
+      "ColumnName": "No Ot relacionada",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 29,
+      "ColumnName": "Tarea de Orden Relacionada",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 30,
+      "ColumnName": "Saldo Adeudado por Producto",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 31,
+      "ColumnName": "Facturas Adeudadas por Producto",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 32,
+      "ColumnName": "ID Ruta",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 33,
+      "ColumnName": "Identificación del Cliente",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 34,
+      "ColumnName": "Direccion Respuesta",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 35,
+      "ColumnName": "Id Direccion Producto",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 36,
+      "ColumnName": "Comentario Rec",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 37,
+      "ColumnName": "Fecha Lectura Anterior",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 38,
+      "ColumnName": "Lectura Anterior",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 39,
+      "ColumnName": "Fecha Lectura Actual",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    },
+    {
+      "NumColum": 40,
+      "ColumnName": "Lectura Actual",
+      "Type": "texto",
+      "MaxLength": 45,
+      "IsRequired": true
+    }
+]
+

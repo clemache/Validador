@@ -7,10 +7,10 @@
     <Compile Update="ConfiguracionValidaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="EditarValidacionColumna.cs">
+    <Compile Update="Validaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Main.cs">
+    <Compile Update="Validador.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -1,3 +1,4 @@
+C:\Users\Lemache Cristhian\Desktop\Validador\Configuracion\ConfigValidations.json
 C:\Users\Lemache Cristhian\Desktop\Validador\Validador.exe
 C:\Users\Lemache Cristhian\Desktop\Validador\Validador.dll
 C:\Users\Lemache Cristhian\Desktop\Validador\Validador.deps.json
@@ -19,6 +20,7 @@ C:\Users\Lemache Cristhian\Desktop\Validador\Microsoft.Extensions.FileProviders.
 C:\Users\Lemache Cristhian\Desktop\Validador\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\Lemache Cristhian\Desktop\Validador\Microsoft.Extensions.Primitives.dll
 C:\Users\Lemache Cristhian\Desktop\Validador\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\Lemache Cristhian\Desktop\Validador\Newtonsoft.Json.dll
 C:\Users\Lemache Cristhian\Desktop\Validador\NPOI.Core.dll
 C:\Users\Lemache Cristhian\Desktop\Validador\NPOI.OOXML.dll
 C:\Users\Lemache Cristhian\Desktop\Validador\NPOI.OpenXml4Net.dll

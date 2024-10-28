@@ -4,7 +4,7 @@
     "ColumnName": "Nro de la Solicitud",
     "Type": "int",
     "MaxLength": 5,
-    "IsRequired": true
+    "IsRequired": false
   },
   {
     "NumColum": 2,
