@@ -7,6 +7,9 @@
     <Compile Update="ConfiguracionValidaciones.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MenuValidador.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Validaciones.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -19,12 +19,14 @@ namespace Validador
         private int numeroColumna;
         private List<ColumnValidation> validaciones;
         private Validaciones _validacionesForm;
-        public ConfiguracionValidaciones(int numeroColumna, List<ColumnValidation> validaciones, Validaciones validacionesForm)
+        private string _configFilePath;
+        public ConfiguracionValidaciones(int numeroColumna, List<ColumnValidation> validaciones, Validaciones validacionesForm,string fileConfigPath)
         {
             InitializeComponent();
             this.numeroColumna = numeroColumna;
             this.validaciones = validaciones;
-            _validacionesForm = validacionesForm;
+            this._validacionesForm = validacionesForm;
+            this._configFilePath = fileConfigPath;
             FiltrarValidacionesPorColumna();
         }
 
@@ -77,10 +79,10 @@ namespace Validador
                 validacionFiltrada.IsRequired = checkObligatorio.Checked;
 
                 var jsonData = JsonConvert.SerializeObject(validaciones, Formatting.Indented);
-                string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Configuracion", "ConfigValidations.json");
+                //string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Configuracion", "ConfigValidations.json");
                 try
                 {
-                    File.WriteAllText(filePath, jsonData);
+                    File.WriteAllText(_configFilePath, jsonData);
                     MessageBox.Show("Los cambios se han guardado correctamente.","Mensaje",MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                     _validacionesForm.configInit();

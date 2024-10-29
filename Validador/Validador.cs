@@ -15,9 +15,11 @@ namespace Validador
         List<string> validationLogs = new List<string>();
         List<ColumnValidation> validaciones = new List<ColumnValidation>();
         Dictionary<int, List<string>> erroresPorFila = new Dictionary<int, List<string>>();
-        public Validador()
+        private string pathFileConfig; 
+        public Validador(string pathConfig)
         {
             InitializeComponent();
+            this.pathFileConfig = pathConfig;
         }
 
         private void btnCargarArchivo_Click(object sender, EventArgs e)
@@ -38,8 +40,8 @@ namespace Validador
         private void ValidateExcelFile(string filePath)
         {
 
-            string filePathValidations = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Configuracion", "ConfigValidations.json");
-            var jsonData = File.ReadAllText(filePathValidations);
+            //string filePathValidations = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Configuracion", "ConfigValidations.json");
+            var jsonData = File.ReadAllText(pathFileConfig);
             validaciones = JsonConvert.DeserializeObject<List<ColumnValidation>>(jsonData);
 
             try
@@ -84,7 +86,7 @@ namespace Validador
                 // Validacion de datos
                 for (int row = 1; row <= sheet.LastRowNum; row++)
                 {
-                    listBoxLogsValidaciones.Items.Add("Validando... Fila N° "+ (row+1));
+                    listBoxLogsValidaciones.Items.Add("Validando... Fila N° " + (row + 1));
                     IRow currentRow = sheet.GetRow(row);
                     if (currentRow == null) continue;
 
@@ -246,7 +248,7 @@ namespace Validador
                                 writer.WriteLine($"- {error}");
                             }
 
-                            writer.WriteLine(); 
+                            writer.WriteLine();
                         }
                     }
                     MessageBox.Show("Archivo .txt generado con éxito", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -297,19 +299,27 @@ namespace Validador
         private void configValidaciones_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Validaciones validaciones = new Validaciones();
+            Validaciones validaciones = new Validaciones(pathFileConfig);
             validaciones.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (erroresPorFila.Count >0)
+            if (erroresPorFila.Count > 0)
             {
                 saveTxtLogsValidations();
             }
-            else {
+            else
+            {
                 MessageBox.Show("Primero debe generar la validación del documento", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuValidador validador = new MenuValidador();
+            validador.Show();
         }
     }
 }

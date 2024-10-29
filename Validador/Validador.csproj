@@ -15,10 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configuracion\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <None Update="Configuracion\ConfigValidationsFES.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Configuracion\ConfigValidations.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

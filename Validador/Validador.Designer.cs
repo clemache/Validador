@@ -35,6 +35,7 @@
             groupBox1 = new GroupBox();
             listBoxLogsValidaciones = new ListBox();
             btnDescargarErroresTxt = new Button();
+            btnVolver = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -72,7 +73,7 @@
             // configValidaciones
             // 
             configValidaciones.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            configValidaciones.Location = new Point(698, 45);
+            configValidaciones.Location = new Point(479, 45);
             configValidaciones.Name = "configValidaciones";
             configValidaciones.Size = new Size(211, 30);
             configValidaciones.TabIndex = 4;
@@ -112,11 +113,22 @@
             btnDescargarErroresTxt.UseVisualStyleBackColor = true;
             btnDescargarErroresTxt.Click += button1_Click;
             // 
+            // btnVolver
+            // 
+            btnVolver.Location = new Point(822, 36);
+            btnVolver.Name = "btnVolver";
+            btnVolver.Size = new Size(87, 34);
+            btnVolver.TabIndex = 7;
+            btnVolver.Text = "<- VOLVER";
+            btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += btnVolver_Click;
+            // 
             // Validador
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(945, 659);
+            Controls.Add(btnVolver);
             Controls.Add(btnDescargarErroresTxt);
             Controls.Add(groupBox1);
             Controls.Add(configValidaciones);
@@ -142,5 +154,6 @@
         private GroupBox groupBox1;
         private ListBox listBoxLogsValidaciones;
         private Button btnDescargarErroresTxt;
+        private Button btnVolver;
     }
 }

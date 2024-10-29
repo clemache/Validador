@@ -2,8 +2,8 @@
   {
     "NumColum": 1,
     "ColumnName": "Nro de la Solicitud",
-    "Type": "double",
-    "MaxLength": 59,
+    "Type": "string",
+    "MaxLength": 19,
     "IsRequired": false
   },
   {
@@ -24,8 +24,8 @@
     "NumColum": 4,
     "ColumnName": "No Orden",
     "Type": "int",
-    "MaxLength": 89,
-    "IsRequired": true
+    "MaxLength": 45,
+    "IsRequired": false
   },
   {
     "NumColum": 5,

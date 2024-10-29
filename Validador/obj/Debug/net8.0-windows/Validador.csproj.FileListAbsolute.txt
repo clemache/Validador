@@ -46,3 +46,5 @@ C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\obj\Debug\net
 C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\obj\Debug\net8.0-windows\Validador.Validaciones.resources
 C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\bin\Debug\net8.0-windows\Configuracion\ConfigValidations.json
+C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\bin\Debug\net8.0-windows\Configuracion\ConfigValidationsFES.json
+C:\Users\Lemache Cristhian\Documents\Proyectos\Validador\Validador\obj\Debug\net8.0-windows\Validador.MenuValidador.resources

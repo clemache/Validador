@@ -15,12 +15,12 @@ namespace Validador
 {
     public partial class Validaciones : Form
     {
-        string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Configuracion", "ConfigValidations.json");
-   
+        private string filePath;
         List<ColumnValidation> validaciones = new List<ColumnValidation>();
-        public Validaciones()
+        public Validaciones(string pathValidations)
         {
             InitializeComponent();
+            this.filePath = pathValidations;
             
         }
 
@@ -53,7 +53,7 @@ namespace Validador
         private void btnVolver_Click(object sender, EventArgs e)
         {
             this.Close();
-            Validador validador = new Validador();
+            Validador validador = new Validador(filePath);
             validador.Show();
         }
 
@@ -68,7 +68,7 @@ namespace Validador
             if (e.ColumnIndex == dataGVValidaciones.Columns["Accion"].Index && e.RowIndex >= 0)
             {
                 var numeroColumna = int.Parse(dataGVValidaciones.Rows[e.RowIndex].Cells["numColumna"].Value.ToString());
-                var configuracionValidaciones = new ConfiguracionValidaciones(numeroColumna, validaciones,this);
+                var configuracionValidaciones = new ConfiguracionValidaciones(numeroColumna, validaciones,this,filePath);
                 configuracionValidaciones.ShowDialog(); 
             }
         }
